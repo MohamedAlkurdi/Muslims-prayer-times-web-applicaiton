@@ -1,0 +1,149 @@
+:root{
+    --primary :#4c5f7a;
+    --secondary:#e5f0fe;
+    --text-color: #222e3e;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+body{
+    background-color: var(--primary);
+}
+
+.navigation,.timesContainer,.countries{
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navigation{
+    margin-bottom: 50px !important;
+}
+.navigation > h1{
+    text-transform: capitalize;
+    color: var(--secondary);
+    font-size: 40px;
+}
+.navigation #useLocation{
+    padding: 7px 12px;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: var(--secondary);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.prayerTime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-position:center ;
+    background-size: cover;
+    color: var(--secondary);
+    min-width: 140px;
+}
+.timeText{
+    font-size: 50px;
+
+}
+.prayerName{
+    font-size: 30px;
+}
+#sunrise{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/sunrise.jpg");
+}
+#fajr{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./images/fajr.jpg");
+}
+#duhr{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/dhuhr.jpg");
+}
+#asr{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/asr.jpg");
+}
+#mughrib{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/maghrib.jpg");
+}
+#isha{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/isha.jpg");
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.list > input{
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 20px;
+    outline: none;
+}
+select{
+    width: 100%;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+
+#showPrayerTimes{
+    padding: 7px 12px;
+    border: none;
+    border-radius: 7px;
+    font-size: 28px;
+    background-color: var(--secondary);
+    color: var(--text-color);
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#note{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 15px;
+    bottom: 15px;
+    gap: 10px;
+    color: white;
+}
+#addedModal{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(14, 124, 0, 0.4);
+    right: 15px;
+    bottom: 15px;
+    gap: 10px;
+    color: white;
+}
+.none{
+    display: none !important;
+}
+#todaysDate{
+    font-size: 26px;
+    color: var(--secondary);
+}

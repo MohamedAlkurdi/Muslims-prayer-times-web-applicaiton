@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>prayer times</title>
+</head>
+<body>
+    <nav class="navigation">
+    <h1>prayer times</h1>
+    <div id="todaysDate"></div>
+    <button id="useLocation">Use your location</button>
+    </nav>
+    <div class="timesContainer">
+    <div class="prayerTime" id="fajr"><span class="timeText">--:--</span><span class="prayerName">fajr</span></div>
+    <div class="prayerTime" id="sunrise"><span class="timeText">--:--</span><span class="prayerName">sunrise</span></div>
+    <div class="prayerTime" id="duhr"><span class="timeText">--:--</span><span class="prayerName">dhuhr</span></div>
+    <div class="prayerTime" id="asr"><span class="timeText">--:--</span><span class="prayerName">asr</span></div>
+    <div class="prayerTime" id="mughrib"><span class="timeText">--:--</span><span class="prayerName">maghrib</span></div>
+    <div class="prayerTime" id="isha"><span class="timeText">--:--</span><span class="prayerName">isha</span></div>
+    </div>
+    <span></span>
+</body>
+<div class="countries">
+    <div class="list"  data-country="Syria">
+    <select>
+        <option value="none">Syria</option>
+            <option value="Dmascus">Dmascus</option>
+            <option value="Aleppo">Aleppo</option>
+            <option value="Homs">Homs</option>
+    </select>
+    <input class="add-city" type="text" placeholder="Add new city...">
+    </div>
+    <div class="list"  data-country="Turkey">
+    <select>
+        <option value="none">Turkey</option>
+        <option value="Istanbul">Istanbul</option>
+        <option value="Trabzon">Trabzon</option>
+        <option value="Hatay">Hatay</option>
+    </select>
+    <input class="add-city" type="text" placeholder="Add new city...">
+    </div>
+    <div class="list" data-country="Saudi Arabia">
+        <select >
+            <option value="none">Saudi Arabia</option>
+            <option value="Makka">Makka</option>
+            <option value="Almadina">Al-madina</option>
+            <option value="Riyadh">Riyadh</option>
+        </select>
+    <input class="add-city" type="text" placeholder="Add new city...">
+        </div>
+    </div>
+    <button id="showPrayerTimes">Show prayer times</button>
+
+    <span id="note">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        Times usually are not %100 accurate.
+    </span>
+    <span id="addedModal" class="none">
+        <i class="fa-solid fa-circle-check"></i>
+        Added successfully!
+    </span>
+<script src="./app.js"></script>
+</html>
